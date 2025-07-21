@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 # 设置工程名称
-project(ScreenModule)
+project(DzTools)
 
 # 使用c++标准
 set(CMAKE_CXX_STANDARD 17)
@@ -23,8 +23,8 @@ elseif("${CMAKE_CXX_COMPILE_ID}" STREQUAL "MSVC")
     set(Qt5_DIR $ENV{QT_MSVC_DIR})
 endif ()
 
-find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
-SET(QT_LIBS Qt5::Core Qt5::Widgets Qt5::Gui)
+find_package(Qt5 COMPONENTS Core Gui Widgets Network REQUIRED)
+SET(QT_LIBS Qt5::Core Qt5::Widgets Qt5::Gui Qt5::Network)
 list(APPEND LINK_LIBS ${QT_LIBS})
 
 message(STATUS "qtPath:${Qt5_DIR}")
@@ -53,7 +53,7 @@ aux_source_directory(${PROJECT_SOURCE_DIR} SRC)
 file(GLOB INC ${PROJECT_SOURCE_DIR}/*.h)
 
 # 添加UI文件在变量UI中
-set(UI ${PROJECT_SOURCE_DIR}/planWidget.ui)
+#set(UI ${PROJECT_SOURCE_DIR}/planWidget.ui)
 
 # 添加头文件包括
 include_directories(${PROJECT_SOURCE_DIR})
@@ -67,10 +67,13 @@ include_directories(${PROJECT_SOURCE_DIR})
 # 设置二进制文件输出目录
 set(EXECUTABLE_OUTPUT_PATH  ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 
-# 生成exe可执行程序
-add_executable(${PROJECT_NAME}
+# 生成dll
+add_library(${PROJECT_NAME}
         ${SRC}
         ${INC}
+        Tools/LogBox/LogBox.cpp
+        Tools/LogBox/LogBox.h
+        Tools/CrashHandle/CrashHandle.h
         #${UI}
         #${RES}
 )
