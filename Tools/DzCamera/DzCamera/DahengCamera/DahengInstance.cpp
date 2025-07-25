@@ -30,4 +30,4 @@ DahengInstance::~DahengInstance()
     IGXFactory::GetInstance().Uninit();
 }
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
