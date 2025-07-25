@@ -186,4 +186,4 @@ QString IKapInstance::formatBoardErrorMsg(int res, const QString &msg)
     return errorMsg;
 }
 
-} // namespace SpeedCamera
+} // namespace DzCamera

@@ -20,6 +20,6 @@ public:
     static QString formatBoardErrorMsg(int res, const QString &msg = QString());
 };
 
-} // namespace SpeedCamera
+} // namespace DzCamera
 
 #endif // IKAPINSTANCE_H
