@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       DalsaCameraInstance.cpp
  * @brief      单例，用于维护全局的 Dalsa 相关实例
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2023/09/14
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2023/09/14 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "DalsaCameraInstance.h"
@@ -38,4 +38,4 @@ DalsaCameraInstance::~DalsaCameraInstance()
     SapManager::Close();
 }
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera

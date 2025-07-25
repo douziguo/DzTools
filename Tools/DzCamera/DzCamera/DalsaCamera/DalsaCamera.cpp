@@ -48,7 +48,7 @@ static void XferCallback(SapXferCallbackInfo *pInfo)
 }
 
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 DalsaCameraInstance *DalsaCamera::instance = new DalsaCameraInstance();
 

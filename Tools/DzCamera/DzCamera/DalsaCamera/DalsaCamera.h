@@ -8,7 +8,7 @@
 
 static void XferCallback(SapXferCallbackInfo *pInfo);
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class DalsaCameraInstance;
 
@@ -44,6 +44,6 @@ public:
     bool stopGrabbing();
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // DALSACAMERA_H
