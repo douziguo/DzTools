@@ -1,3 +1,6 @@
-*.txt text eol=lf
-*.sh text eol=lf
-*.png binary
+# 强制所有文件使用Unix风格行尾
+* text=auto eol=lf
+
+# 特别指定文件类型
+*.cpp eol=lf
+*.h eol=lf
