@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       IKapCamera.cpp
  * @brief      埃科光电相机
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2025/02/19
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2025/02/19 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "IKapCamera.h"
@@ -51,7 +51,7 @@ void _stdcall removalCallbackFunction(void *context, ITKEVENTINFO eventInfo)
 
     qWarning() << "[埃科光电相机] 设备掉线";
 
-    auto *camera = (SpeedCamera::IKapCamera *) context;
+    auto *camera = (DzCamera::IKapCamera *) context;
     if (camera != nullptr) {
         emit camera->cameraDisconnected();
     }
@@ -67,7 +67,7 @@ void CALLBACK OnGrabStart(void *pContext)
 // 本函数被注册为一个回调函数。当一帧图像采集完成时，函数被调用
 void CALLBACK OnFrameReady(void *pContext)
 {
-    auto *camera = (SpeedCamera::IKapCamera *) pContext;
+    auto *camera = (DzCamera::IKapCamera *) pContext;
     if (camera != nullptr) {
         camera->onFrameReady();
     }
@@ -96,7 +96,7 @@ void CALLBACK OnGrabStop(void *pContext)
 
 /******************************************************************************/
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 IKapInstance IKapCamera::instance;
 
@@ -499,4 +499,4 @@ QImage IKapCamera::toQImage(unsigned char *pData)
     }
 }
 
-} // namespace SpeedCamera
+} // namespace DzCamera

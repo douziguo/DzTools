@@ -1,14 +1,14 @@
 ﻿#ifndef SENTECHCAMERA_H
 #define SENTECHCAMERA_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
 #include <StApi_TL.h>   // Transport Layer function (MUST)
 //#include <StApi_IP.h>   // Image Processing function (Optional)
 //#include <StApi_GUI.h>  // GUI fucntion (Optional)
 
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class SentechCamera : public Camera
 {

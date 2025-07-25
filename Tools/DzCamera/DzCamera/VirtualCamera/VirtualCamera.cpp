@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       VirtualCamera.cpp
  * @brief      虚拟相机
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2021/04/20
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2021/04/20 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "VirtualCamera.h"
@@ -18,7 +18,7 @@
 #include <QRandomGenerator>
 #include <QDateTime>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 VirtualCamera::VirtualCamera(QObject *parent) : Camera(parent)
 {

@@ -1,22 +1,22 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       BaslerInstance.cpp
  * @brief      单例，用于维护全局的 Basler 相关实例
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2021/04/14
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2021/04/14 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "BaslerInstance.h"
 #include <QImage>
 #include <QDebug>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 using namespace Pylon;
 using namespace GenICam;
@@ -80,4 +80,4 @@ void BaslerInstance::resultToImage(CGrabResultPtr pInBuffer, QImage &OutImage)
     }
 }
 
-} // namespace SpeedCamera
+} // namespace DzCamera

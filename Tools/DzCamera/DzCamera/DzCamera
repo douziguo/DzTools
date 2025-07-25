@@ -2,36 +2,36 @@
  * 引入所有支持的相机头文件
  */
 
-#ifdef ENABLE_SPEED_CAMERA_BASLER
-#include "SpeedCamera/BaslerCamera/BaslerCamera.h"
+#ifdef ENABLE_CAMERA_BASLER
+#include "DzCamera/BaslerCamera/BaslerCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_SENTECH
-#include "SpeedCamera/SentechCamera/SentechCamera.h"
+#ifdef ENABLE_CAMERA_SENTECH
+#include "DzCamera/SentechCamera/SentechCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_HIK
-#include "SpeedCamera/HikCamera/HikCamera.h"
+#ifdef ENABLE_CAMERA_HIK
+#include "DzCamera/HikCamera/HikCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_DAHENG
-#include "SpeedCamera/DahengCamera/DahengCamera.h"
+#ifdef ENABLE_CAMERA_DAHENG
+#include "DzCamera/DahengCamera/DahengCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_HUARAY
-#include "SpeedCamera/HuarayCamera/HuarayCamera.h"
+#ifdef ENABLE_CAMERA_HUARAY
+#include "DzCamera/HuarayCamera/HuarayCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_DALSA
-#include "SpeedCamera/DalsaCamera/DalsaCamera.h"
+#ifdef ENABLE_CAMERA_DALSA
+#include "DzCamera/DalsaCamera/DalsaCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_MINDVISION
-#include "SpeedCamera/MindVisionCamera/MindVisionCamera.h"
+#ifdef ENABLE_CAMERA_MINDVISION
+#include "DzCamera/MindVisionCamera/MindVisionCamera.h"
 #endif
 
-#ifdef ENABLE_SPEED_CAMERA_IKAP
-#include "SpeedCamera/IKapCamera/IKapCamera.h"
+#ifdef ENABLE_CAMERA_IKAP
+#include "DzCamera/IKapCamera/IKapCamera.h"
 #endif
 
-#include "SpeedCamera/VirtualCamera/VirtualCamera.h"
+#include "DzCamera/VirtualCamera/VirtualCamera.h"

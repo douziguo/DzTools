@@ -1,12 +1,12 @@
 ﻿#ifndef IKAPCAMERA_H
 #define IKAPCAMERA_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
 #include "IKapInstance.h"
 #include <shlwapi.h>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class IKapCamera : public Camera
 {

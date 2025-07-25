@@ -7,7 +7,7 @@
 
 class QImage;
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class BaslerInstance
 {
@@ -18,6 +18,6 @@ public:
     static void resultToImage(Pylon::CGrabResultPtr pInBuffer, QImage &OutImage);
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // BASLERINSTANCE_H

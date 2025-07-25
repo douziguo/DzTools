@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       SentechCamera.cpp
  * @brief      欧姆龙相机
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2021/04/13
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2021/04/13 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "SentechCamera.h"
@@ -17,7 +17,7 @@
 
 #include <QDebug>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 using namespace StApi;
 using namespace GenICam;
@@ -274,4 +274,4 @@ bool SentechCamera::setExposureTime(const qreal &expTime)
     }
 }
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera

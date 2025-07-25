@@ -1,9 +1,9 @@
 ﻿#ifndef VirtualCamera_H
 #define VirtualCamera_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class VirtualCamera : public Camera
 {

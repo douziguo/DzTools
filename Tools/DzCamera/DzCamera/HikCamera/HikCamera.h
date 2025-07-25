@@ -1,9 +1,9 @@
 ﻿#ifndef HIKCAMERA_H
 #define HIKCAMERA_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class HikInstance;
 
@@ -52,6 +52,6 @@ public:
     void handleDisconnect();
 };
 
-} // namespace SpeedCamera
+} // namespace DzCamera
 
 #endif // HIKCAMERA_H

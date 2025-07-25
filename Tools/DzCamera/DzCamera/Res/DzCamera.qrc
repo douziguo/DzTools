@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/SpeedCamera">
+    <qresource prefix="/DzCamera">
         <file>translate/cs.qm</file>
         <file>translate/sr_RS.qm</file>
         <file>translate/zh_CN.qm</file>

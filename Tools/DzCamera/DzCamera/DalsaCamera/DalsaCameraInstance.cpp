@@ -16,7 +16,7 @@
 
 #include <QDebug>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 DalsaCameraInstance::DalsaCameraInstance()
 {

@@ -1,22 +1,22 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
- * @file       SpeedCamera.cpp
+ * @file       DzCamera.cpp
  * @brief      相机封装的基类
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2021/04/13
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2021/04/13 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
-#include "SpeedCamera.h"
+#include "DzCamera.h"
 
 #include <QDebug>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 Camera::Camera(QObject *parent)
     : QObject(parent)
@@ -27,7 +27,7 @@ Camera::~Camera() {}
 // 记录一个新的错误信息
 void Camera::setError(const QString &errMsg)
 {
-    qDebug().noquote() << "[SpeedCamera] Error: " << errMsg;
+    qDebug().noquote() << "[DzCamera] Error: " << errMsg;
     errMsgs.append(errMsg);
 
     // 只缓存最近的 20 条错误消息

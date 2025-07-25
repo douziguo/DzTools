@@ -6,7 +6,7 @@
 #include <QString>
 #include <QImage>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class HikInstance : public QObject
 {

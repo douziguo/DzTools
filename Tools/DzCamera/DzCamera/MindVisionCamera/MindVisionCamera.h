@@ -2,9 +2,9 @@
 #define MINDVISIONCAMERA_H
 
 #include <windows.h>
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class MindVisionCameraInstance;
 

@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       IKapInstance.cpp
  * @brief      埃科光电相机
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2025/02/20
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2025/02/20 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "IKapInstance.h"
@@ -17,7 +17,7 @@
 #include <QMap>
 #include <QDebug>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 IKapInstance::IKapInstance()
 {

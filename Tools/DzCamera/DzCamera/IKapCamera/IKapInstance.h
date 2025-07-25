@@ -8,7 +8,7 @@
 #include "IKap/Include/IKapBoard.h"
 #include "IKap/Include/IKapC.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class IKapInstance
 {

@@ -3,7 +3,7 @@
 
 #pragma execution_character_set("utf-8")
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 #include "SapClassBasic.h"
 
 static void XferCallback(SapXferCallbackInfo *pInfo);

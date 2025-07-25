@@ -1,5 +1,5 @@
-﻿#ifndef SPEEDCAMERA_H
-#define SPEEDCAMERA_H
+﻿#ifndef DZCAMERA_H
+#define DZCAMERA_H
 
 #pragma execution_character_set("utf-8")
 
@@ -7,7 +7,7 @@
 #include <QImage>
 #include <QReadWriteLock>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class Camera : public QObject
 {
@@ -89,6 +89,6 @@ Q_SIGNALS:
     void imageGrabbed(QImage image, QPrivateSignal);
 };
 
-} // namespace SpeedCamera
+} // namespace DzCamera
 
-#endif // SPEEDCAMERA_H
+#endif // DZCAMERA_H

@@ -1,11 +1,11 @@
 ﻿#ifndef DAHENGCAMERA_H
 #define DAHENGCAMERA_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
-#include "IGXDevice.h"
+#include "inc/IGXDevice.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class DahengCamera : public Camera
 {
@@ -34,6 +34,6 @@ private:
     QString formatErrMsg(QString msg) const;
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // DAHENGCAMERA_H

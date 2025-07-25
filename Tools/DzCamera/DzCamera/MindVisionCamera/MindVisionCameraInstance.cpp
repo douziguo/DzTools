@@ -1,20 +1,20 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       MindVisionCameraInstance.cpp
  * @brief      MindVision 相机单例，管理全局的生命周期
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2023/11/23
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2023/11/23 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "MindVisionCameraInstance.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 MindVisionCameraInstance::MindVisionCameraInstance(QObject *parent) : QObject(parent)
 {

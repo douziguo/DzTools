@@ -1,22 +1,22 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       DahengInstance.cpp
  * @brief      大恒相机 SDK 生命周期管理
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2023/02/08
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2023/02/08 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "DahengInstance.h"
 
-#include "GalaxyIncludes.h"
+#include "inc/GalaxyIncludes.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 DahengInstance::DahengInstance()
 {

@@ -1,7 +1,7 @@
 ﻿#ifndef DAHENGINSTANCE_H
 #define DAHENGINSTANCE_H
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class DahengInstance
 {
@@ -15,6 +15,6 @@ public:
     }
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // DAHENGINSTANCE_H

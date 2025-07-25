@@ -3,14 +3,14 @@
 
 #include <QObject>
 #include <windows.h>
-#include "CameraApi.h"
+#include "include/CameraApi.h"
 
 // 指定相机枚举的最大个数
 #ifndef MV_CAMERA_NUMS
 #define MV_CAMERA_NUMS 50
 #endif
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class MindVisionCameraInstance : public QObject
 {

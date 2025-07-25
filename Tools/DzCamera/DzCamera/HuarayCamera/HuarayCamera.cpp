@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       HuarayCamera.cpp
  * @brief      Huaray 相机功能封装
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2024/05/16
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2024/05/16 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "HuarayCamera.h"
@@ -31,7 +31,7 @@
     } while(0)
 
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 HuarayCamera::HuarayCamera() : Camera()
 {
@@ -258,4 +258,4 @@ bool HuarayCamera::setAcquizMode(bool acquizMode)
     return true;
 }
 
-}    // namespace SpeedCamera
+}    // namespace DzCamera

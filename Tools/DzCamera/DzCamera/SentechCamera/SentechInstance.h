@@ -7,7 +7,7 @@
 
 #define SENTECH     (SentechInstance::getInstance())
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class SentechInstance
 {

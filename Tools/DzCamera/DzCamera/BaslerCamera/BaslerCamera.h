@@ -1,11 +1,11 @@
 ﻿#ifndef BASLERCAMERA_H
 #define BASLERCAMERA_H
 
-#include "../Public/SpeedCamera.h"
+#include "../Public/DzCamera.h"
 
 #include "BaslerInstance.h"
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 class BaslerCamera : public Camera
 {
@@ -40,6 +40,6 @@ public:
     bool isCameraConnected() override;
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // BASLERCAMERA_H

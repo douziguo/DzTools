@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       HikInstance.cpp
  * @brief      单例，用于维护全局的海康相机相关实例
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2022/06/09
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2022/06/09 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "HikInstance.h"
@@ -17,7 +17,7 @@
 #include <QImage>
 #include <QMap>
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 HikInstance::HikInstance(QObject *parent)
     : QObject(parent)
@@ -202,4 +202,4 @@ QString HikInstance::formatErrorMsg(int nErrorNum, const QString &msg)
     return errorMsg;
 }
 
-} // namespace SpeedCamera
+} // namespace DzCamera

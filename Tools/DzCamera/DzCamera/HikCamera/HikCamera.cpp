@@ -1,15 +1,15 @@
 ﻿/******************************************************************************
- * Copyright(C) 2023 Speedbot Robotics Co., Ltd.
+ * Copyright(C) 2025 Dzg Robotics Co., Ltd.
  * All right reserved. See COPYRIGHT for detailed Information.
  *
  * @file       HikCamera.cpp
  * @brief      海康相机功能封装
  *
- * @author     李孟其<limengqi@email.cn>
- * @date       2022/06/09
+ * @author     douziguo<ziguodou@gemail.com>
+ * @date       2025/04/13
  *
  * @history
- * - 2022/06/09 模块创建
+ * - 2025/04/13 模块创建
  *****************************************************************************/
 
 #include "HikCamera.h"
@@ -49,10 +49,10 @@
 // 图片接收回调
 void __stdcall hikImageCallBackEx(unsigned char *pData, MV_FRAME_OUT_INFO_EX *pFrameInfo, void *pUser)
 {
-    auto *camera = (SpeedCamera::HikCamera *) pUser;
+    auto *camera = (DzCamera::HikCamera *) pUser;
     if (pFrameInfo && camera) {
         QImage image;
-        SpeedCamera::HikInstance::dataToImage(camera->hikHandle(), pData, pFrameInfo, image);
+        DzCamera::HikInstance::dataToImage(camera->hikHandle(), pData, pFrameInfo, image);
         camera->setImage(image);
     }
 }
@@ -60,7 +60,7 @@ void __stdcall hikImageCallBackEx(unsigned char *pData, MV_FRAME_OUT_INFO_EX *pF
 // 异常回调
 void __stdcall hikExceptionCallBack(unsigned int nMsgType, void *pUser)
 {
-    auto *camera = (SpeedCamera::HikCamera *) pUser;
+    auto *camera = (DzCamera::HikCamera *) pUser;
     if (nMsgType == MV_EXCEPTION_DEV_DISCONNECT) {
         qWarning() << "[海康相机] MV_EXCEPTION_DEV_DISCONNECT 设备掉线";
         camera->handleDisconnect();
@@ -70,7 +70,7 @@ void __stdcall hikExceptionCallBack(unsigned int nMsgType, void *pUser)
     }
 }
 
-namespace SpeedCamera {
+namespace DzCamera {
 
 HikCamera::HikCamera(QObject *parent)
     : Camera(parent)
@@ -455,4 +455,4 @@ int HikCamera::getCounterCurrentValue()
     return pstIntValue.nCurValue;
 }
 
-} // namespace SpeedCamera
+} // namespace DzCamera
