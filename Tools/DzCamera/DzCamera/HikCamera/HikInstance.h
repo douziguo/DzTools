@@ -32,6 +32,6 @@ public:
     static QString formatErrorMsg(int nErrorNum, const QString &msg = QString());
 };
 
-} // namespace SpeedCamera
+} // namespace DzCamera
 
 #endif // HIKINSTANCE_H
