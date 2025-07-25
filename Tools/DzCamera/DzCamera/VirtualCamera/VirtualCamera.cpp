@@ -190,4 +190,4 @@ bool VirtualCamera::setTriggerMode(TriggerMode triggerMode)
     return true;
 }
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera

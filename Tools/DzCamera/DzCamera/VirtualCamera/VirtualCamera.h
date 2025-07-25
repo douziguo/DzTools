@@ -41,6 +41,6 @@ private:
     void delay(int msec);
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // VirtualCamera_H

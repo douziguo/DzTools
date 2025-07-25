@@ -28,6 +28,6 @@ public:
     StApi::IStSystemReleasable *getIStSystemPtr();
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // SENTECHINSTANCE_H

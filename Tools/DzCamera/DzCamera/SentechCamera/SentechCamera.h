@@ -38,6 +38,6 @@ public:
     bool setExposureTime(const qreal &expTime) override;
 };
 
-}   // namespace SpeedCamera
+}   // namespace DzCamera
 
 #endif // SENTECHCAMERA_H
