@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/SpeedCamera">
+        <file>translate/cs.qm</file>
+        <file>translate/sr_RS.qm</file>
+        <file>translate/zh_CN.qm</file>
+    </qresource>
+</RCC>
